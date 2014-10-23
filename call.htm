@@ -105,7 +105,8 @@
         <div class="wrapperLeft">
             <div class="headerLeft">
                 <div class="localVideo">
-                    
+                    <h5>Video: Usuário Local</h5>
+                    <video class="video" id="video_local" autoplay="autoplay" muted="true"> </video>
                 </div>
                 <div class="chat">
                     
@@ -113,7 +114,21 @@
             </div>
             
             <div class="remoteVideo">
-                <div id="divCallCtrl" class="span7 well" style='display:table-cell; vertical-align:middle'>
+                <h5>Video: Usuário Remoto</h5>
+                <video class="video" id="video_remote" autoplay="autoplay"></video>
+            </div>
+        </div>
+
+        <div class="wrapperRight">
+            <img src="togo/styles/assets/images/ifscLogo.png" alt="ifscLogo" class="logo">
+            <div class="usersDiv">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="divCallCtrl" class="span7 well" style='display:table-cell; vertical-align:middle'>
                     <label style="width: 100%;" align="center" id="txtCallStatus">
                     </label>
                     <h2>
@@ -167,21 +182,6 @@
                         </tr>
                     </table>
                 </div>
-            </div>
-            <div class=""></div>
-        </div>
-
-        <div class="wrapperRight">
-            <img src="togo/styles/assets/images/ifscLogo.png" alt="ifscLogo" class="logo">
-            <div class="usersDiv">
-
-            </div>
-        </div>
-
-
-    </div>
-
-    
 
     <!-- /container -->
 
@@ -195,7 +195,7 @@
             <li class="userStatus"><i class="fa fa-user"></i> {{userStatus}}</li> 
             <li class="ramalNumber">{{userRamal}}</li> 
             <li class="icon video"> <i class="fa fa-video-camera"></i> </li> 
-            <li class="icon audio"> <i class="fa fa-microphone"></i> </li> 
+            <li class="icon audio" > <i class="fa fa-microphone"></i> </li> 
             <li class="icon chat"> <i class="fa fa-weixin"></i> </li>
         </ul>
     </script>
@@ -226,6 +226,7 @@
             <tr><td colspan=3><input type="button" style="width: 100%" class="btn btn-medium btn-danger" value="close" onclick="closeKeyPad();" /></td></tr>
         </table>
     </div>
+
     <!-- Call button options -->
     <ul id="ulCallOptions" class="dropdown-menu" style="visibility:hidden">
         <li><a href="#" onclick='sipCall("call-audio");'>Audio</a></li>

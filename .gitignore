@@ -1,0 +1,6 @@
+# Ignorar arquivos específicos
+.DS_Store
+
+# Ignorando SASS-CACHE
+togo/styles/.sass-cache
+togo/styles/.sass-cache/*

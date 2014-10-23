@@ -20,7 +20,7 @@ var UserView = Backbone.View.extend({
 
         var content = {
             userStatus: "",
-            userRamal: "2000"   
+            userRamal: "101"   
         };
         
         var rendered = Mustache.to_html(this.template, content);
@@ -33,7 +33,8 @@ var UserView = Backbone.View.extend({
             x = $el.find('ul'),
             data = x.attr('data-ramal');
 
-        window.alert("Abrindo comunicação de VÍDEO para o ramal "+data);
+            sipCall("call-audiovideo"); //função do pŕoprio sipML5. js/lib/index.js
+            console.log('call-video: ', data);
     },
 
     openAudio: function() {
@@ -41,7 +42,8 @@ var UserView = Backbone.View.extend({
             x = $el.find('ul'),
             data = x.attr('data-ramal');
 
-        window.alert("Abrindo comunicação de ÁUDIO para o ramal "+data);
+            sipCall("call-audio"); //função do pŕoprio sipML5. js/lib/index.js
+            console.log('call-audio: ', data);
     },
 
     openChat: function() {

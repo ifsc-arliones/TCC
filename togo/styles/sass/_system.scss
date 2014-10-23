@@ -65,6 +65,14 @@ ul, ol {
 				height: 150px;
 				background: $colorBase;
 				border: 1px solid $darkColor;
+				text-align: center;
+				video{
+					width: 268px;
+					height: 124px;
+					background-color: #000000;
+					-webkit-transition-property: opacity;
+					-webkit-transition-duration: 2s;
+				}
 			}
 
 			.chat{
@@ -73,6 +81,21 @@ ul, ol {
 				height: 150px;	
 				background: $colorBase;
 				border: 1px solid $darkColor;
+			}
+		}
+
+		.remoteVideo{
+			height: 444px;
+			width: 800px;
+			vertical-align: middle;
+			display: table-cell;
+			text-align: center;
+			video{
+				width: 98%;
+				height: 95%;
+				background-color: #000000; 
+				-webkit-transition-property: opacity; 
+				-webkit-transition-duration: 2s;
 			}
 		}
 	}
@@ -87,7 +110,7 @@ ul, ol {
 		.logo{
 			height: 105px;
 			display: block;
-			margin: 0 auto;
+			margin: 10px 0px 10px 40px;
 		}
 
 		.usersDiv{
