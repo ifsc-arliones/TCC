@@ -24,16 +24,12 @@ ul, ol {
 }
 
 .registerBlock{
-	position: absolute;
+	position: relative;
 	height: 300px;
 	width: 350px;
 	background: $colorBase;
 	border: 1px solid #000;
 	z-index: 1;
-	top: 40%;
-	left: 50%;
-	margin-top: -175px;
-	margin-left: -175px;
 
 	h2{
 		text-align: center;
@@ -45,6 +41,8 @@ ul, ol {
 	}
 }
 
+// ==================== WRAPPER ====================
+
 .wrapper{
 	position: relative;
 	width: 1100px;
@@ -55,16 +53,19 @@ ul, ol {
 		position: relative;
 		width: 800px;
 		height: 600px;
-		background: $colorBase;
 		float: left;
+
 		.headerLeft{
+			@include border-radius(15px);
+			background: $colorBase;
 			position: relative;
+			width: 100%;
+			height: 150px;
+
 			.localVideo{
 				float: left;
 				width: 280px;
-				height: 150px;
-				background: $colorBase;
-				border: 1px solid $darkColor;
+				height: 100%;
 				text-align: center;
 				video{
 					width: 268px;
@@ -78,21 +79,18 @@ ul, ol {
 			.chat{
 				float: left;
 				width: 520px;
-				height: 150px;	
-				background: $colorBase;
-				border: 1px solid $darkColor;
+				height: 100%;
 			}
 		}
 
 		.remoteVideo{
+			@include border-radius(15px);
 			height: 444px;
 			width: 800px;
-			vertical-align: middle;
-			display: table-cell;
 			text-align: center;
+			background: $colorBase;
+			margin-top: 15px;
 			video{
-				width: 98%;
-				height: 95%;
 				background-color: #000000; 
 				-webkit-transition-property: opacity; 
 				-webkit-transition-duration: 2s;
@@ -104,27 +102,45 @@ ul, ol {
 		position: relative;
 		height: 600px;
 		width: 275px;
-		background: $darkColor;
 		float: left;
 		margin-left: 10px;
 		.logo{
-			height: 105px;
+			height: 139px;
 			display: block;
-			margin: 10px 0px 10px 40px;
 		}
 
 		.usersDiv{
 			// overflow: auto;
+
 			.user{
-				height: 60px;
+				@include border-radius(15px);
+				position: relative;
+				height: 50px;
 				background: $colorBase;
+				&:after{
+					content: '';
+					position: absolute;
+					border-style: solid;
+					border-width: 10px 10px 0;
+					border-color: $colorBase transparent;
+					display: block;
+					width: 0;
+					z-index: 1;
+					bottom: -10px;
+					right: 20px;
+				}
+
 				ul{
-					margin-top: 5px;
-					padding-left: 20px;
+					display: table;
+					margin-top: 25px;
+					width: 100%;
+					height: 100%;
+
 					li{
-						display: inline-block;
+						display: table-cell;
 						height: 40px;
 						width: 40px; 
+						vertical-align: middle;
 					}
 
 					.ramalNumber{
@@ -146,7 +162,7 @@ ul, ol {
 						font-size: 20px;
 						cursor: pointer;
 						i{
-							margin-top: 22px;
+							// margin-top: 22px;
 							&:hover{
 								color: #FFFFFF;
 							}
@@ -155,10 +171,6 @@ ul, ol {
 							}
 						}
 					}
-
-
-
-				
 				}		
 			}
 		}
