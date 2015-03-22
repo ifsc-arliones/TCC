@@ -8,24 +8,32 @@ var UserView = Backbone.View.extend({
         "click .icon.chat" : "openChat"
     },
 
+    peer: null,
+
     initialize: function() {
         _.bindAll(this, 'render');
+
+        this.data = {
+            ramalOcupado: false
+        };
 
         this.template = $('#userTemplate').html();
     },
 
-    render: function(x) {
+    render: function() {
         console.log("Rendering...");
-        // this.$el.html(this.template({userStatus: "Disponível", userRamal: "2001"}));
+        var data = $.extend(true, {}, this.peer, this.data);
 
-        var content = {
-            userStatus: "",
-            userRamal: "101"   
-        };
-        
-        var rendered = Mustache.to_html(this.template, content);
+        console.log('fooo', data);
+
+        var rendered = Mustache.to_html(this.template, data);
         this.$el.html(rendered);
-        $('.usersDiv').append(this.el);
+    },
+
+    setPeer: function(peer) {
+        this.peer = peer;
+        
+        this.data.ramalOcupado = peer.ipport != 0;
     },
 
     openVideo: function() {
@@ -36,6 +44,7 @@ var UserView = Backbone.View.extend({
             sipCall("call-audiovideo"); //função do pŕoprio sipML5. js/lib/index.js
             console.log('call-video: ', data);
     },
+
 
     openAudio: function() {
         var $el = $(this.el),
@@ -50,6 +59,8 @@ var UserView = Backbone.View.extend({
         var $el = $(this.el),
             x = $el.find('ul'),
             data = x.attr('data-ramal');
+
+             console.log('foo x', x);
 
         window.alert("Abrindo comunicação de CHAT para o ramal "+data);
     }

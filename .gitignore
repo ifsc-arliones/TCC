@@ -4,3 +4,5 @@
 # Ignorando SASS-CACHE
 togo/styles/.sass-cache
 togo/styles/.sass-cache/*
+
+node_modules

@@ -21,19 +21,24 @@
     <script src="SIPml-api.js?svn=224" type="text/javascript"> </script>
 
     <!-- Styles -->
+
     <link href="./assets/css/bootstrap.css" rel="stylesheet" />
     <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet" />
 
     <!--Togo System-->
 
-    <link rel="stylesheet" type="text/css" href="togo/styles/fontAwesome/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="togo/styles/systemOut.css">
-        
-    <script src="togo/js/lib/jquery-2.1.1.min.js"></script>
-    <script src="togo/js/lib/underscore.js"></script>
-    <script src="togo/js/lib/backbone.js"></script>
-    <script src="togo/js/lib/mustache.js"></script>
-    <script src="togo/js/views/UserView.js"></script>
+    <link rel="stylesheet" type="text/css" href="./togo/styles/fontAwesome/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./togo/styles/systemOut.css">
+    
+    <script src="./togo/js/lib/sails.io.js"></script>
+    
+    <script src="./togo/js/lib/jquery-2.1.1.min.js"></script>
+    <script src="./togo/js/lib/underscore.js"></script>
+    <script src="./togo/js/lib/backbone.js"></script>
+    <script src="./togo/js/lib/mustache.js"></script>
+    <script src="./togo/js/views/UserView.js"></script>
+
+    <script src="./togo/js/controllers/sysController.js"></script>
 
     <!--Fim Togo System-->
 </head>
@@ -100,7 +105,6 @@
     <!-- </div> -->
     <div class="wrapper">
         
-
         <div class="wrapperLeft">
             <div class="headerLeft">
                 <div class="localVideo">
@@ -187,27 +191,15 @@
     <!-- Togo wrapper-->
         
     
-    
     <!--Template para a lista de usuários-->
     <script id="userTemplate" type="text/template">
-        <ul data-ramal = "{{userRamal}}" > 
-            <li class="userStatus"><i class="fa fa-user"></i> {{userStatus}}</li> 
-            <li class="ramalNumber">{{userRamal}}</li> 
+        <ul data-ramal = "{{numeroRamal}}" > 
+            <li class="userStatus" {{#ramalOcupado}}style="background:red;"{{/ramalOcupado}}><i class="fa fa-user"></i></li> 
+            <li class="ramalNumber">{{objectname}}</li> 
             <li class="icon video"> <i class="fa fa-video-camera"></i> </li> 
             <li class="icon audio" > <i class="fa fa-microphone"></i> </li> 
             <li class="icon chat"> <i class="fa fa-weixin"></i> </li>
         </ul>
-    </script>
-
-    <!--Geração de usuário-->
-    <script>
-        var user = 5,
-            userView = [];
-
-        for(var i=0; i<=5; i++){
-            userView[i] = new UserView();
-            userView[i].render();
-        }
     </script>
 
 
@@ -257,25 +249,6 @@
     <audio id="ringtone" loop src="sounds/ringtone.wav" />
     <audio id="ringbacktone" loop src="sounds/ringbacktone.wav" />
     <audio id="dtmfTone" src="sounds/dtmf.wav" />
-
-    <!-- 
-        Microsoft Internet Explorer extension
-        For now we use msi installer as we don't have trusted certificate yet :(
-    -->
-    <!--object id="webrtc4ieLooper" classid="clsid:7082C446-54A8-4280-A18D-54143846211A" CODEBASE="http://sipml5.org/deploy/webrtc4all.CAB"> </object-->
-
-    <!-- GOOGLE ANALYTICS -->
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-
-    <script type="text/javascript">
-        try {
-            var pageTracker = _gat._getTracker("UA-6868621-19");
-            pageTracker._trackPageview();
-        } catch (err) { }
-    </script>
 
 </body>
 </html>
