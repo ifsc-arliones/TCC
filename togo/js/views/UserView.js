@@ -49,18 +49,20 @@ var UserView = Backbone.View.extend({
     openAudio: function() {
         var $el = $(this.el),
             x = $el.find('ul'),
-            data = x.attr('data-ramal');
+            data = x.attr('data-ramal'),
+            $id_txtPhoneNumber = $('#txtPhoneNumber');
+
+            //para não mudar muito a estrutura original do sipML5, foi pego o número do ramal 
+            //e setado no input #txtPhoneNumber que o próprio sipML5 trata.
+            $id_txtPhoneNumber.val(data);
 
             sipCall("call-audio"); //função do pŕoprio sipML5. js/lib/index.js
-            console.log('call-audio: ', data);
     },
 
     openChat: function() {
         var $el = $(this.el),
             x = $el.find('ul'),
             data = x.attr('data-ramal');
-
-             console.log('foo x', x);
 
         window.alert("Abrindo comunicação de CHAT para o ramal "+data);
     }

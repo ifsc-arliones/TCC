@@ -185,6 +185,11 @@ ul, ol {
   color: #BABABA;
 }
 
+/* line 182, sass/_system.scss */
+#divCallCtrl {
+  display: none !important;
+}
+
 /* line 1, sass/_index.scss */
 .navbar-inner-red {
   background-color: #600000;

@@ -325,6 +325,7 @@
 
     // makes a call (SIP INVITE)
     function sipCall(s_type) {
+        console.log('foo sipCall txtPhoneNumber:', txtPhoneNumber.value);
         if (oSipStack && !oSipSessionCall && !tsk_string_is_null_or_empty(txtPhoneNumber.value)) {
             if(s_type == 'call-screenshare') {
                 if(!SIPml.isScreenShareSupported()) {
