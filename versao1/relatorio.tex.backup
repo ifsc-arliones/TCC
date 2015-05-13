@@ -1,8 +1,8 @@
-\documentclass[12pt,a4paper,oneside]{report}
+\documentclass[ruledheader]{abnt} %\documentclass[12pt,a4paper,oneside]{report} -> antigo
 \usepackage[utf8x]{inputenc}
 \usepackage[brazilian]{babel}
 \usepackage{url} % para formatar URLs no documento
-\usepackage{amsmath} %include de estilo de equações matmáticas
+\usepackage{amsmath} %include de estilo de equações matmáticas  
 \usepackage{graphicx} %biblioteca de imagens
 \usepackage{indentfirst}
 \usepackage{sidecap}
@@ -351,6 +351,11 @@ Largamente utilizado para geração de relatórios em tempo real, chats, jogos m
 
 É através do Socket.io que iremos coletar informações do Asterisk, para a atualização das informações em nosso sistema SIPML5.
 
+\subsection{NodeJS Asterisk Manager}
+
+
+\subsection{Asterisk Manager API (AMI)}
+
 
 \section{Linguagens utilizadas no projeto}
 \label{s_linguagensProjeto}
@@ -379,102 +384,141 @@ O CSS \textit{Cascading Style Sheets} é uma linguagem para estilos que define o
 Criada por Brendan Eich e lançado pela primeira vez na versão beta do navegador NetScape 2.0 em 1995, o Javascript é uma linguagem programação interpretada no lado cliente, ou seja, é processada pelo próprio navegador. Com o JavaScript podemos criar efeitos especiais para nossas páginas na Web, além de proporcionar uma maior interatividade com nossos usuários. \cite{JAVASCRIPT}
 Hoje o Javascript é considerado a principal linguagem para programação client-side em navegadores web e todos os exemplos de códigos aqui apresentados, o utilizam. 
 
-\chapter{Implementação da aplicação} % artigo é dividido por sessões
-\label{c_bibliografia} % serve para referência cruzada
+\chapter{LevantamentoDeRequisitos} % artigo é dividido por sessões
+\label{c_levamtamentoDeRequisitos} % serve para referência cruzada
 Após algumas pesquisas envolvendo projetos utilizando WebRTC, iniciou-se a fase de desenvolvimento do projeto. Foram definidas os requisitos para que esta fosse implementada de acordo com o pretendido.
 
-Neste capítulo, será apresentado como a aplicação deverá funcionar após seu termino, descrevendo a funcionalidade dos módulos e como todo o sistema está interagindo. 
+Neste capítulo, será apresentado como a aplicação deverá funcionar, descrevendo a funcionalidade dos módulos e como todo o sistema deverá interagir.
 
 \section{Requisitos Funcionais}
+\label{s_requisitosFuncionais}
 O objetivo deste projeto é desenvolver uma aplicação WebRTC+SIP robusta, onde um usuário consegue interagir com outros de maneira prática, e mostrar o desempenho da aplicação em diferentes plataformas. Esta seção apresenta os requisitos que foram definidos inicialmente no projeto. 
 
 \subsection{Estabelecimento de chamada}
+\label{ss_estabelecimentoDechamada}
 O sistema deve permitir que um usuário consiga estabelecer uma chamada através de video, áudio ou ambos, com outro usuário que estiver conectado no sistema. Em caso onde os ramais conectados estejam em ligação, ausente ou não conectados o sistema deverá informar o porque da ligação não ter sido completada com sucesso.
 
 \subsection{Estado de presença e Lista de contato}
+\label{ss_estadoElistaDeContato}
 É um serviço que se encontra na maior parte de aplicações de \textit{chat}. É necessário um banco de dados que contenha todas as informações dos usuários que se encontram na lista de contatos, para quando necessário, exibir o estado de presença em que uma pessoa se encontra. (Ocupado, Disponível, Ausente, \textit{Offline}). Sempre que o estado de um usuário for alterado, é preciso notificar a todos que estão conectados, o estado deste, em tempo real.
 
 \subsection{Video, chat/mensagem instantâneas}
+\label{ss_videoEchat}
 Outro item desejável é no sistema, é um serviço de \textit{chat}. Cada usuário poderá abrir um canal de comunicação com outro, interagindo via mensagens instantâneas. 
 A solução sugerida foi o uso do framework Socket.io. O usuário envia sua mensagem para o servidor, e este se encarrega de encaminhar as mensagens para outros ou um cliente específico.
 
 \section{Requisitos Não Funcionais}
+\label{s_requisitosNaoFuncionais}
 Esta seção está relacionada ao uso da aplicação em termos de desempenho, usabilidade, confiabilidade, tecnologias envolvidas. Será descrita o que se deve esperar do sistema desenvolvido, 
 
 \subsection{Desempenho}
+\label{ss_desempenho}
  - O sistema deverá atualizar assim que o estado de um usuário for alterado. Não deverá ultrapassar mais que 5s.
 
 \subsection{Usabilidade}
+\label{ss_usabilidade}
 A interface deverá ser intuitiva. Desde a localização de um usuário disponível no sistema até a realização e encerramento da chamada.
 
 \subsection{Segurança}
+\label{ss_seguranca}
 Nenhum agente externo poderá ter acesso aos dados trafegados.
 
 \subsection{Restrições}
+\label{ss_restricoes}
 É garantido funcionamento apenas para versões atuais do Google Chrome e Mozilla Firefox.
 
 
-\chapter{Proposta} % artigo é dividido por sessões
-\label{c_bibliografia} % serve para referência cruzada
 
-A proposta deste trabalho é implementar uma aplicação onde um usuário que esteja utilizando um simples navegador \textit{web}, consiga realizar chamadas para pontos finais que estejam utilizando SIP, como por exempo ATA's, telefones IP, \textit{softphones}, entre outros. Deverá também mostrar quais usuários que estão disponíveis no momento, ocupados ou desconectados.
-Para isso, dever ser feita uma integração da aplicação desenvolvida juntamente com o servidor Asterisk.
+%Antes de explicar a implementação, acredito que seja bacana mostrar o cenário que foi utilizado. Tvz mostrar o cenário anterior.
 
-Ao final do projeto, será realizado alguns testes de desempenho para avaliar a qualidade das ligações.
 
-\section{Cenário}
-\label{s_cenario} %serve para referência cruzada
 
-O cenário pensado para a implementação da aplicação e realização de testes, está logo abaixo na figura 3.1. A versão do Asterisk que será utilizado é a versão 11 ou superior, pois nativamente já possui suporte para o WebRTC. Na parte do \textit{WebServer} rodando a aplicação, será utilizado como base o sipML5, pois este já implementa a pilha do protocolo SIP em Javascript, disponibilizando ligações a uma rede SIP. Toda a questão de sinalização, também é mostrada na figura.
+\chapter{Implementação}
+\label{c_implementacao}
 
-\begin{figure}[!htdb]
- \centering
-  \includegraphics[width = 1\linewidth]{images/cenario}
-  \caption{Cenário básico para realização de testes} %titulo da figura
-  \label{f_cenario}
-\end{figure}
+Este capítulo aborda a implementação da aplicação (utilizando a base do SIPML5), juntamente com o nosso servidor VOIP, o Asterisk. Nele será abordado as decisões do projetos, uso das principais bibliotecas utilizadas no desenvolvimento, em destaque o Socket.io, quais foram as dificuldades em todo o processo, quais decisões foram tomadas para resolver os problemas em questão.
+ 
+\section{Decisões do projeto}
+\label{s_decisoesDoProjeto} %serve para referência cruzada
+No início deste projeto, havia poucos softwares que implementavam bem toda a pilha do protocolo SIP em Javascript. O único que se apresentou grande no cenário até então foi o SIPML5. Este disponibilizava apenas o serviço de ligação áudio/vídeo de uma ponta a outra, sendo necessário primeiramente preencher alguns campos para o registro num servidor SIP. E foi encima desta plataforma que toda a aplicação foi desenvolvida, e testada.
 
-\section{Ambiente de experimentação}
-\label{s_ambienteDeExperimentacao} %serve para referência cruzada
+Atualmente existem outras aplicações quem desempenho o mesmo papél que o SIPML5. É o caso SIP.js e do jsSIP.
+Feito teste de ambos em seus respectivos sites, SIP.js mostrou que não funciona tão bem no Google Chrome (41.0.2272.76). Funcionou normalmente apenas no Mozilla Firefox. O jsSIP não mostrou funcionamento em seu próprio site, tanto no Firefox, quanto no Chrome. Não recebia ligação, e ao realizar, aparecia apenas uma mensagem de "chamando", mas não tocava no ramal destino.
 
-Para realização de testes, será utilizado máquinas virtuais que farão papel de cliente e servidor, simulando cenários próximo do real. Posteriormente será realizado testes na rede do campus IFSC-SJ.
+\section{Desenvolvimento das funcionalidades}
+\label{s_descricaoModulo} %serve para referência cruzada
 
-\section{Ambiente de desenvolvimento}
-\label{s_ambienteDeDesenvolvimento} %serve para referência cruzada
+Nos tópicos a seguir, será descrita o desenvolvimento de toda a aplicação, algumas das decisões tomadas durante o projeto, e como é o relacionamento entre as funcionalidades.
 
-Como a Web API do WebRTC foi implementada em Javascript, para criar soluções a partir dela, será necessário apenas de um editor de texto, que neste caso será o Sublime Text 2. Ferramenta gratuita com grande poder de customização.
+\subsection{Sistema de acesso}
+\label{ss_sistema de acesso}
+Explicar como é o processo de login do sipml5. explicar que ele monta a pilha sip e tal.
 
-\section{Cronograma}
-\label{s_cronograma} %serve para referência cruzada
+\subsection{Estabelecimento de chamadas}
+\label{ss_estabelecimentoDechamada} 
 
-\begin{table}[!htpb]
-\centering
+  %NÃO ESQUECER DE ARRUMAS AS REFERÊNCIAS AQUIIIIIIII. RETIRAR ESTE COMENTÁRIO, SOMENTE DEPOIS DE PRONTO.
 
-% definindo o tamanho da fonte para small
-% outros possÃ­veis tamanhos: footnotesize, scriptsize
-\begin{small} 
+  Para o estabelecimento chamadas, foi utilizada a base do sipML5, que por sua vez foi desenvolvida utilizando a tecnologia WebRTC. Conforme mostrado na figura 2.9, toda a regra de negócio foi contruida de maneira simples, para que o próprio desenvolvedor web, possa trabalhar e desenvolver outras aplicações. Em poucas linhas foram definidas a pilha SIP, informando todos os dados do usuário no servidor VOIP, tipo de comunicação (linha 10) e qual o ramal que deverá receber a ligação (linha 15).   
   
-% redefinindo o espaÃ§amento das colunas
-\setlength{\tabcolsep}{3pt} 
+  Nas figuras XX1 e XX2, mostra os dois estados do ramal. A figura XX1 mostra quando o usuário está ativo no sistema, sem realizar nenhuma ação. A figura XX2 mostra quando o usuário está em ligação com algum outro ramal conectado no servidor Asterisk. Note que no canto direito além do usuário ser informado sobre todo o estado da ligação, o estado dos ramais são alterados visualmente. Todas essas informações mostradas aos usuário, são coletadas através do Asterisk Manager API em conjunto com Socket.io. No anexo X, é mostrada partes do código responsáveis por esse processo. %mostrar o evento que colhe os dados da ligação.
+   
+  %FIGURA 1
+  
+  %FIGURA 2
 
-% \cline Ã© semelhante ao \hline, porÃ©m Ã© possÃ­vel indicar as colunas que terÃ£o essa a linha horizontal
-% \multicolumn{10}{c|}{Meses} indica que dez colunas serÃ£o mescladas e a palavra Meses estarÃ¡ centralizada dentro delas.
+\subsection{Lista de contatos e estado de presença}
+\label{ss_listaContatoEestadoPresenca} %serve para referência cruzada
 
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
- & \multicolumn{12}{c|}{Meses}\\ \cline{1-13}
-\raisebox{1.5ex}{Etapa} & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09 & 10 & 11 & 12 \\ \hline
+  Como o AMI libera acesso via TCP com o Asterisk, é possivel enviar comandos (\textit{actions}) ao Asterisk, que retornará com a resposta da requisição, ou seja, ao abrir a página da aplicação, é enviado uma \textit{action} para o Asterisk, solicitando os ramais que foram declarados no sip.conf do Asterisk. Sobre a resposta da requisição, é feita a manipulação dos dados, mostrando de maneira simples, a lista de ramais que estão registrados no servidor e o estado de cada um destes. Os códigos do anexo X, explica como é feito todo processo, desde o envio da \textit{action}, até a manipulação dos dados.
+  
+  O fluxo explicado anteriormente, pode ser vista na Figura XX
 
-Pesquisa Bibliográfica &  &  & X & X & X &  &  &  &  &  &  & \\ \hline
-Escrita de relatório de TCC1 &  &  &  &  &  & X &  &  &  &  &  & \\ \hline
-Entrega do Documento e Apresentação TCC1 &  &  &  &  &  &  & X &  &  &  &  & \\ \hline
-Desenvolvimento do projeto &  &  &  &  &  &  & X & X & X & X & X & X \\ \hline
-Elaboração do Documento de Avaliação Final &  &  &  &  &  &  & X & X & X & X & X & X  \\ \hline
+\subsection{Mensagens Instântaneas}
+\label{ss_mensagensIntantaneas} %serve para referência cruzada
 
-\end{tabular} 
-\end{small}
-\caption{Cronograma das atividades previstas}
-\label{t_cronograma}
-\end{table}
+
+\section{Dificuldade encontradas e suas soluções}
+\label{s_dificuldadeEsolucoes} %serve para referência cruzada
+
+Durante o desenvolvimento da aplicação, houveram algumas dúvidas e problemas que acabavam impactando no funcionamento do projeto. Foram tomadas medidas corretivas e mudanças em partes do projeto.
+
+- falar sobre a escolha do php para coletar os usuário online, dpois foi decidido fazer por javascript.
+
+- integrar o projeto sipml5 com o Sails.js
+- utilização do Socket.io para captura de ramais
+- implementação do chat
+- problemas com NAT/ configuração correta do Asterisk
+- bugs, quando aplicação origina ou recebe ligações na máquina .54;
+
+
+\chapter{Testes e resultados obtidos}
+\label{c_testeEresultados}
+- 
+
+\section{Metodologia}
+\label{s_metodologia} %serve para referência cruzada
+
+\section{Ambiente de testes}
+\label{s_ambienteDetestes} %serve para referência cruzada
+
+\section{Avaliação de resultados}
+\label{s_avaliacaoResultados} %serve para referência cruzada
+
+
+
+\chapter{Conclusão}
+\label{c_conclusao}
+
+\section{Resumo do trabalho desenvolvido}
+\label{s_resumoDoTrabalho} %serve para referência cruzada
+
+\section{Dificuldades Encontradas}
+\label{s_dificuldadeEncontradas} %serve para referência cruzada
+
+\section{Trabalhos Futuros}
+\label{s_trabalhosFuturos} %serve para referência cruzada
+
 
 %\chapter{Considerações finais} % artigo é dividido por sessões
 %\label{c_consideracoesFinais} % serve para referência cruzada

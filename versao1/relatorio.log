@@ -1,0 +1,712 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.23)  13 MAY 2015 00:04
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**relatorio.tex
+(./relatorio.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 3 languages loaded.
+(/usr/share/texmf/tex/latex/abntex/abnt.cls
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+Document Class: abnt 2006/09/09 v1.32 Classe abnt (NBR6024, NBR6027, NBR6028, N
+BR14724)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count79
+\calc@Bcount=\count80
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count81
+\calc@Cskip=\skip43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count82
+\mult@box=\box26
+\multicol@leftmargin=\dimen104
+\c@unbalance=\count83
+\c@collectmore=\count84
+\doublecol@number=\count85
+\multicoltolerance=\count86
+\multicolpretolerance=\count87
+\full@width=\dimen105
+\page@free=\dimen106
+\premulticols=\dimen107
+\postmulticols=\dimen108
+\multicolsep=\skip44
+\multicolbaselineskip=\skip45
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count88
+\c@finalcolumnbadness=\count89
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\multicol@sort@counter=\count90
+)
+(/usr/share/texmf/tex/latex/abntex/abntex-abrev.sty
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+Package: abntex-abrev 2005/11/14 v1.4 Abreviacoes
+
+(/usr/share/texmf/tex/latex/abntex/nbr10522-1988.def
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:19
+88)
+)
+(/usr/share/texmf/tex/latex/abntex/abntex-abrev-pt_BR.def
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+File: abntex-abrev-pt_BR.def 2005/11/14 v1.3 definicao de abntex-abrev, traduca
+o de termos en_US/pt_BR
+))
+(/usr/share/texmf/tex/latex/abntex/abntex-text.sty
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+Package: abntex-text 2005/11/14 v1.1 abnTeX text replacements
+
+(/usr/share/texmf/tex/latex/abntex/abntex-text-pt_BR.def
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+File: abntex-text-pt_BR.def 2005/12/21 v1.2 Definicao de nomes em Portugues/Bra
+sil (pt_BR)
+))
+(/usr/share/texmf/tex/latex/abntex/abntex-default-design.sty
+(/usr/share/texmf/tex/latex/abntex/cvs-id.def)
+Package: abntex-default-design 2005/06/22 v1.2 Definicoes de design padrao do a
+bntex
+
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+
+
+Package relsize Warning: Failed to get list of defined font sizes.
+(relsize)                Size scaling will attempt arbitrary sizes..
+
+)
+\ABNTanapindent=\skip46
+\ABNTsignwidth=\skip47
+\ABNTsignthickness=\skip48
+\ABNTsignskip=\skip49
+) (/usr/share/texmf/tex/latex/abntex/nbr6027-1989.def)
+(/usr/share/texmf/tex/latex/abntex/nbr14724-2001.def)
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count91
+\c@chapter=\count92
+\c@section=\count93
+\c@subsection=\count94
+\c@subsubsection=\count95
+\c@paragraph=\count96
+\c@subparagraph=\count97
+\c@figure=\count98
+\c@table=\count99
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\bibindent=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count100
+\uc@combtoks=\toks17
+\uc@combtoksb=\toks18
+\uc@temptokena=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
+\babel@savecnt=\count101
+\U@D=\dimen113
+)
+\l@brazilian = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen114
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen115
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count102
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count103
+\leftroot@=\count104
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count105
+\DOTSCASE@=\count106
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen116
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count107
+\c@MaxMatrixCols=\count108
+\dotsspace@=\muskip11
+\c@parentequation=\count109
+\dspbrk@lvl=\count110
+\tag@help=\toks21
+\row@=\count111
+\column@=\count112
+\maxfields@=\count113
+\andhelp@=\toks22
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks23
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count114
+))
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
+)
+(/usr/share/texlive/texmf-dist/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+\SC@BOXWD=\dimen125
+\SC@CAPWD=\dimen126
+\SC@tempdima=\dimen127
+\SC@tempdimb=\dimen128
+\c@SC@C=\count115
+\SC@BOX=\box54
+) (./relatorio.aux
+
+LaTeX Warning: Label `ss_videoEngine' multiply defined.
+
+
+LaTeX Warning: Label `f_mediaStream' multiply defined.
+
+
+LaTeX Warning: Label `f_mediaStream' multiply defined.
+
+
+LaTeX Warning: Label `f_mediaStream' multiply defined.
+
+
+LaTeX Warning: Label `f_mediaStream' multiply defined.
+
+
+LaTeX Warning: Label `f_mediaStream' multiply defined.
+
+
+LaTeX Warning: Label `f_mediaStream' multiply defined.
+
+
+LaTeX Warning: Label `f_mediaStream' multiply defined.
+
+
+LaTeX Warning: Label `ss_estabelecimentoDechamada' multiply defined.
+
+
+LaTeX Warning: Label `s_metodologia' multiply defined.
+
+)
+\openout1 = `relatorio.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 17.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count116
+\scratchdimen=\dimen129
+\scratchbox=\box55
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen130
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip55
+\RaggedLeftLeftskip=\skip56
+\RaggedRightLeftskip=\skip57
+\CenteringRightskip=\skip58
+\RaggedLeftRightskip=\skip59
+\RaggedRightRightskip=\skip60
+\CenteringParfillskip=\skip61
+\RaggedLeftParfillskip=\skip62
+\RaggedRightParfillskip=\skip63
+\JustifyingParfillskip=\skip64
+\CenteringParindent=\skip65
+\RaggedLeftParindent=\skip66
+\RaggedRightParindent=\skip67
+\JustifyingParindent=\skip68
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 24
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 24
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 24
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 24
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 26.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+ (./relatorio.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 2.
+ [2
+
+] [3])
+\tf@toc=\write3
+\openout3 = `relatorio.toc'.
+
+ [4]
+Overfull \hbox (3.25658pt too wide) in paragraph at lines 32--33
+[]\OT1/ptm/m/n/12 Este do-cu-mento aborda as tec-no-lo-gias ne-cess[]arias para
+ o de-sen-vol-vi-mento de uma aplica[][]ao,
+ []
+
+[5
+
+
+
+]
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+
+Overfull \hbox (6.15918pt too wide) in paragraph at lines 53--54
+[]\OT1/ptm/m/n/12 O fato do We-bRTC per-mi-tir es-ta-be-le-cer comunica[][]ao p
+or som e ima-gem (video-confer[]encia),
+ []
+
+[6
+
+]
+Overfull \hbox (7.5757pt too wide) in paragraph at lines 60--61
+[]\OT1/ptm/m/n/12 O ob-je-tivo deste tra-ba-lho []e im-ple-men-tar e ava-liar u
+m cen[]ario t[]^^Ppico de con-verg[]encia telefonia-
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 66.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+ [7] [8]
+Cap\'{\i }tulo 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+[9
+
+] <images/webrtcArchitecture.pdf, id=36, 742.775pt x 483.8075pt>
+File: images/webrtcArchitecture.pdf Graphic file (type pdf)
+
+<use images/webrtcArchitecture.pdf>
+Package pdftex.def Info: images/webrtcArchitecture.pdf used on input line 109.
+(pdftex.def)             Requested size: 546.29153pt x 355.83417pt.
+
+Overfull \hbox (91.04742pt too wide) in paragraph at lines 109--110
+ [][] 
+ []
+
+<images/mediaStream.pdf, id=37, 483.83258pt x 129.99266pt>
+File: images/mediaStream.pdf Graphic file (type pdf)
+
+<use images/mediaStream.pdf>
+Package pdftex.def Info: images/mediaStream.pdf used on input line 124.
+(pdftex.def)             Requested size: 500.77129pt x 134.54848pt.
+
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 124--125
+ [][] 
+ []
+
+[10 <./images/webrtcArchitecture.pdf>]
+<images/mediaStreamCode.pdf, id=51, 659.46375pt x 314.17375pt>
+File: images/mediaStreamCode.pdf Graphic file (type pdf)
+
+<use images/mediaStreamCode.pdf>
+Package pdftex.def Info: images/mediaStreamCode.pdf used on input line 133.
+(pdftex.def)             Requested size: 455.24411pt x 216.88557pt.
+ [11 <./images/mediaStream.pdf> <./images/mediaStreamCode.pdf>] [12] [13] <imag
+es/stun.png, id=82, 837.1275pt x 570.13pt>
+File: images/stun.png Graphic file (type png)
+
+<use images/stun.png>
+Package pdftex.def Info: images/stun.png used on input line 193.
+(pdftex.def)             Requested size: 455.24411pt x 310.04048pt.
+ <images/turn.png, id=84, 837.1275pt x 521.95pt>
+File: images/turn.png Graphic file (type png)
+
+<use images/turn.png>
+Package pdftex.def Info: images/turn.png used on input line 205.
+(pdftex.def)             Requested size: 455.24411pt x 283.83987pt.
+
+Overfull \hbox (24.57866pt too wide) in paragraph at lines 217--220
+[]\OT1/ptm/m/n/12 O SIP \OT1/ptm/m/it/12 Ses-sion Ini-ti-a-tion Pro-to-col []\O
+T1/ptm/m/n/12 e um pro-to-colo para es-ta-be-le-ci-mento de cha-ma-das, manuten
+[][]ao
+ []
+
+[14 <./images/stun.png>] [15 <./images/turn.png (PNG copy)>]
+Overfull \hbox (2.93529pt too wide) in paragraph at lines 246--247
+[]\OT1/ptm/m/n/12 Agente Usu[]ario (\OT1/ptm/m/it/12 User Agente - UA\OT1/ptm/m
+/n/12 ): Trata-se de um ponto ponto fi-nal de uma comunica[][]ao
+ []
+
+<images/chamadaSIP.jpg, id=92, 478.03593pt x 478.03593pt>
+File: images/chamadaSIP.jpg Graphic file (type jpg)
+
+<use images/chamadaSIP.jpg>
+Package pdftex.def Info: images/chamadaSIP.jpg used on input line 256.
+(pdftex.def)             Requested size: 364.19667pt x 364.19368pt.
+ [16]
+<images/websocket.pdf, id=96, 794.87064pt x 643.32343pt>
+File: images/websocket.pdf Graphic file (type pdf)
+
+<use images/websocket.pdf>
+Package pdftex.def Info: images/websocket.pdf used on input line 271.
+(pdftex.def)             Requested size: 364.19667pt x 294.76422pt.
+ [17 <./images/chamadaSIP.jpg>]
+Overfull \hbox (49.7394pt too wide) in paragraph at lines 291--292
+[]\OT1/ptm/m/n/12 Na vers[]ao 11 do As-te-risk, foi adi-ci-o-nado o su-porte ao
+ We-bRTC e cri-ado o m[]odulo res$[]$http$[]$websocket
+ []
+
+
+Overfull \hbox (20.92352pt too wide) in paragraph at lines 291--292
+\OT1/ptm/m/n/12 que per-mite pro-gra-ma-do-res Ja-vas-cript de-sen-vol-ve-rem s
+olu[][]oes em que haja intera[][]ao e comunica[][]ao
+ []
+
+[18 <./images/websocket.pdf>]
+<images/sipml5.pdf, id=115, 909.3975pt x 279.0425pt>
+File: images/sipml5.pdf Graphic file (type pdf)
+ <use images/sipml5.pdf>
+Package pdftex.def Info: images/sipml5.pdf used on input line 315.
+(pdftex.def)             Requested size: 455.24411pt x 139.69121pt.
+
+<images/sipml5code.pdf, id=116, 896.34875pt x 408.52625pt>
+File: images/sipml5code.pdf Graphic file (type pdf)
+
+<use images/sipml5code.pdf>
+Package pdftex.def Info: images/sipml5code.pdf used on input line 325.
+(pdftex.def)             Requested size: 455.24411pt x 207.4854pt.
+ [19 <./images/sipml5.pdf>] [20 <./images/sipml5code.pdf>] [21] <images/html5.p
+df, id=147, 511.9125pt x 212.795pt>
+File: images/html5.pdf Graphic file (type pdf)
+
+<use images/html5.pdf>
+Package pdftex.def Info: images/html5.pdf used on input line 373.
+(pdftex.def)             Requested size: 455.24411pt x 189.23758pt.
+ [22 <./images/html5.pdf>]
+Cap\'{\i }tulo 3.
+[23
+
+] [24]
+Cap\'{\i }tulo 4.
+[25
+
+] [26] [27]
+Cap\'{\i }tulo 5.
+[28
+
+]
+Cap\'{\i }tulo 6.
+(./relatorio.bbl [29
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
+[]\OT1/ptm/m/n/12 html5, Mar. 2014.  In-ter-net: https://developer.mozilla.org/
+pt-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+[]\OT1/ptm/m/n/12 Getting star-ted with we-brtc, fev 2014.  In-ter-net:
+ []
+
+)
++-------------------------------------------------------------------+
+| Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
+|                  http://abntex.codigolivre.org.br                 |
++-------------------------------------------------------------------+
+[30
+
+] (./relatorio.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4562 strings out of 495004
+ 64484 string characters out of 6180662
+ 133959 words of memory out of 5000000
+ 7609 multiletter control sequences out of 15000+600000
+ 50076 words of font info for 96 fonts, out of 8000000 for 9000
+ 16 hyphenation exceptions out of 8191
+ 38i,12n,41p,689b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on relatorio.pdf (30 pages, 2542307 bytes).
+PDF statistics:
+ 206 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+
