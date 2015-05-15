@@ -470,10 +470,13 @@ Explicar como é o processo de login do sipml5. explicar que ele monta a pilha s
 \subsection{Lista de contatos e estado de presença}
 \label{ss_listaContatoEestadoPresenca} %serve para referência cruzada
 
-  Como o AMI libera acesso via TCP com o Asterisk, é possivel enviar comandos (\textit{actions}) ao Asterisk, que retornará com a resposta da requisição, ou seja, ao abrir a página da aplicação, é enviado uma \textit{action} para o Asterisk, solicitando os ramais que foram declarados no sip.conf do Asterisk. Sobre a resposta da requisição, é feita a manipulação dos dados, mostrando de maneira simples, a lista de ramais que estão registrados no servidor e o estado de cada um destes. Os códigos do anexo X, explica como é feito todo processo, desde o envio da \textit{action}, até a manipulação dos dados.
+  Como o AMI libera acesso via TCP com o Asterisk, é possivel enviar comandos (\textit{actions}) ao mesmo, que retornará com a resposta da requisição, ou seja, ao abrir a página da aplicação, é enviado uma \textit{action} para o Asterisk, solicitando os ramais que foram declarados no sip.conf do Asterisk. Sobre a resposta da requisição, é feita a manipulação dos dados, mostrando de maneira simples, a lista de ramais que estão registrados no servidor e o estado de cada um destes. Qualquer ramal que se conectar posteriormente no servidor, a aplicação receberá o evento disparado do próprio Asterisk, informando que algum ramal se conectou, mudando então a cor do ramal. Os códigos do anexo X, explica como é feito todo processo, desde o envio da \textit{action}, até a manipulação dos dados.
   
   O fluxo explicado anteriormente, pode ser vista na Figura XX
 
+  %FIGURA mostrando um exemplo da aplicação enviando a action para o asterisk, e este retornando as requisições. Mostrar ramais conectados no asterisk, a aplicação enviando requisição ao asterisk, este retornando a aplicação, aplicação enviando para o front, e o front mostrando a lista de usuários 
+  
+  
 \subsection{Mensagens Instântaneas}
 \label{ss_mensagensIntantaneas} %serve para referência cruzada
 
@@ -483,6 +486,15 @@ Explicar como é o processo de login do sipml5. explicar que ele monta a pilha s
 
 Durante o desenvolvimento da aplicação, houveram algumas dúvidas e problemas que acabavam impactando no funcionamento do projeto. Foram tomadas medidas corretivas e mudanças em partes do projeto.
 
+\subsection{Geração da lista de usuários, via PHP}
+  
+  Para o desenvolvimento da lista de usuários, foi utilizado inicialmente a linguagem PHP para a captura de eventos, ou envio das \textit{actions} no Asterisk. Houve sucesso na captura das informações, porém houveram grandes problemas da maneira de como informar, listar estas informações ao cliente. 
+  A parte do código responsável por essa tarefa, se mostrou muito ineficiente, pois era necessário enviar periodicamente requisições para o Asterisk, para informar o estado dos ramais em tempo real. 
+  
+  Pela falta de domínio da linguagem e pelo seu baixo desempenho no sistema, viu-se a necessidade de mudança no projeto. Após algumas pesquisas, o Javascript apareceu como a melhor solução para o cenário.  Ao invés de gerar diversas requisições ao Asterisk, é aberto um socket com o mesmo, que ficará escutando todos os eventos executados. Ou seja, ao conectar um usuário no sistema, a aplicação receberá do Asterisk este evento, fará o tratamento e enviará para a interface da aplicação, como usuário ativo. 
+ 
+\subsection{NAT (\textit{Network address translation})}
+  
 - falar sobre a escolha do php para coletar os usuário online, dpois foi decidido fazer por javascript.
 
 - integrar o projeto sipml5 com o Sails.js
